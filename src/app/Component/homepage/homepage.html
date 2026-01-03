@@ -1,0 +1,724 @@
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <div class="swiper mySwiper" #mySwiper>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-section position-relative">
+                        <img ngSrc="assets/Img/hero.webp" class="w-100 hero-img" priority alt="" fill>
+                        <div class="sun-rays">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="leaves">
+                            <img src="assets/Img/leaf1.png" class="leaf leaf-1" />
+                            <img src="assets/Img/leaf2.png" class="leaf leaf-2" />
+                            <img src="assets/Img/leaf3.png" class="leaf leaf-3" />
+                        </div>
+                        <div class="hero-content text-white">
+                            <h1 class="fw-bold display-4">Grow Your Business With Confidence</h1>
+                            <p class="lead mt-3">
+                                We provide high-quality fertilizer solutions<br>
+                                to support your agriculture success.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-section position-relative">
+                        <div style="position: absolute;z-index: 2;height:100%;width: 100%;"
+                            class="d-flex align-items-center justify-content-center">
+                            <h1 class="fw-bold hero-title"
+                                style="color: white;text-align: center;margin-top: 35rem;font-size: clamp(1.5rem, 3vw, 3rem);">
+                                Smart Farming: Technology Empowering Agriculture</h1>
+                        </div>
+                        <img src="assets/Img/_img2.webp" class="w-100 hero-img1" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-section position-relative">
+
+                        <div style="position: absolute;z-index: 2;height:100%;width: 100%;"
+                            class="d-flex align-items-center justify-content-center">
+                            <h1 class="fw-bold hero-title"
+                                style="color: white;text-align: center;margin-top: 35rem;font-size: clamp(1.5rem, 3vw, 3rem);">
+                                Cultivating a Better Tomorrow</h1>
+                        </div>
+                        <img src="assets/Img/compressed_under_200kb.jpg" class="w-100 hero-img1" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-section position-relative">
+
+                        <div style="position: absolute;z-index: 2;height:100%;width: 100%;"
+                            class="d-flex align-items-center justify-content-center">
+                            <h1 class="fw-bold hero-title"
+                                style="color: white;text-align: center;margin-top: 35rem;font-size: clamp(1.5rem, 3vw, 3rem);">
+                                Integrated Crop Protection Practices</h1>
+                        </div>
+                        <img src="assets/Img/img3.png" class="w-100 hero-img1" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="news-marquee">
+            <strong style="margin-right:15px;">BREAKING NEWS</strong>
+            <div class="marquee-track">
+                @for(items of newsAds;track items){
+                <span>{{items}}</span>
+                }
+            </div>
+        </div>
+
+
+        <section class="py-5 mt-4 ">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-md-5 content slide-left  ">
+                        <div class="ms-md-2 ms-lg-5 "><img class="img-fluid rounded-3" src="assets/Img/farmer.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1 content slide-right">
+                        <div class="ms-md-2 ms-lg-5">
+                            <h2 class="display-5 fw-bold section-title">About Us</h2>
+                            <p class="lead">Cultivating Growth, Sustaining the Future <br>
+                                ​At <strong>Ghatprabha Fertilizers Pvt Ltd</strong> , we believe that the future of the
+                                world
+                                lies in the health of its soil.
+                                Established in 2005, we have grown from a local supplier to a leading manufacturer of
+                                <strong> premium NPK mixtures. Soil Conditioner, Organic Manure Micronutrients</strong>,
+                                serving
+                                farmers across <strong> Karnataka and Maharashtra</strong>.
+                            </p>
+                            <button class="more-btn" [routerLink]="['/About']">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="leadership-section container">
+            <div class="swiper"   #_swiper slides-per-view="1" pagination='{"clickable": true}' loop="true"
+                class=" border border-1 rounded  position-relative overflow-hidden">
+                <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                        <div class="leadership-container">
+                            <div class="leadership-left">
+                                <h2 #typingText class="typing-text-chairmen" data-text="Shashikant Rajaram Puramwar">
+                                </h2>
+                                <p class="leader-position">CHAIRMAN</p>
+
+                                <blockquote class="leader-quote">
+                                    Our success is built on innovation, integrity, and the incredible talent of our
+                                    global
+                                    team.
+                                    Together, we're shaping the future of our industry.
+                                </blockquote>
+
+                                <p class="leader-description">
+                                    Shashikant Rajaram Puramwar, the esteemed Chairman of <strong>"GHATPRABHA
+                                        Fertilizers
+                                        Pvt. Ltd.
+                                        Nandikurali ,"</strong> has played a transformative role in revolutionizing
+                                    agricultural practices in India, particularly in Maharashtra and Karnataka. His
+                                    journey
+                                    began
+                                    during a period when the agricultural sector in India, despite its vast potential
+                                    and
+                                    importance,
+                                    was marred by numerous challenges.
+                                </p>
+                            </div>
+
+                            <div class="leadership-right">
+                                <img src="assets/Img/chairman.jpeg" class="chairman zoom-img" alt="Chairman Photo">
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="swiper-slide">
+                        <div class="leadership-container">
+                            <div class="leadership-left">
+                                <h2 #typingTextDirector class="typing-text-director"
+                                    data-text="Kailash Rajaram Puramwar"></h2>
+                                <p class="leader-position">Managing Director</p>
+
+                                <blockquote class="leader-quote">
+                                    Our success is built on innovation, integrity, and the incredible talent of our
+                                    global
+                                    team.
+                                    Together, we're shaping the future of our industry.
+                                </blockquote>
+
+                                <p class="leader-description">
+                                    Kailash Rajaram Puramwar, the esteemed Managing Director of <strong> "GHATPRABHA
+                                        Fertilizers
+                                        Pvt. Ltd.
+                                        Nandikurali ,"</strong> has played a transformative role
+                                    where he continues to provide strategic leadership and guidance. Drawing on decades
+                                    of
+                                    experience in the agricultural sector,
+                                    he plays a key role in overseeing operations, strengthening farmer-focused
+                                    initiatives,
+                                    and driving sustainable growth across the branch.
+                                </p>
+
+
+                            </div>
+
+                            <div class="leadership-right">
+                                <img src="assets/Img/director.jpeg" class="chairman zoom-img" alt="Chairman Photo">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-pagination1"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="wrapper">
+            <h2 class="section-title mt-5">Our Products</h2>
+            <div class="carousel">
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/liquidFertilizers/lqft1.png" class="bagsSize" alt="Abstract 1">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">102626</div>
+                                <div class="sc-card-text">
+                                    <p>Liquas is a range of liquid fertilizers. This balanced formula ensures easy
+                                        availability
+                                        and absorption of macronutrients.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/_bpc.png" class="bagsSize" alt="Abstract 1">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">Water Soluble</div>
+                                <div class="sc-card-text">
+                                    <p>polyhalite-based, multi-nutrient compounded fertilizers that are nearly 100%
+                                        water
+                                        soluble.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/neembased.png" class="bagsSize" alt="Abstract 1">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">10:20:10</div>
+                                <div class="sc-card-text">
+                                    <p>Customized nutrient mixtures for different crops and soil types to maximize
+                                        yield potential.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/neembased2020.png" class="bagsSize" alt="Abstract 2">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">10:20:20</div>
+                                <div class="sc-card-text">
+                                    <p>Improve soil structure, water retention, and nutrient availability for
+                                        healthier plant growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/areaspecial0621.png" class="bagsSize" alt="Abstract 3">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">14:06:21</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers that enrich soil with organic matter and essential
+                                        nutrients Organic Manure.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/neembased150505.png" class="bagsSize" alt="Abstract 4">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">15:05:05</div>
+                                <div class="sc-card-text">
+                                    <p>Essential trace elements including Magnesium Sulphate, Ferrous Sulphate,
+                                        and Zinc Sulphate.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/neembased171717.png" class="bagsSize" alt="Abstract 5">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">17:17:17</div>
+                                <div class="sc-card-text">
+                                    <p>Phosphorus Rich Organic Manure and Potash Derived from Molasses for
+                                        specialized nutrient needs</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/neembased181810.png" class="bagsSize" alt="Abstract 6">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">18:18:10</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/neembased201010.png" class="bagsSize" alt="Abstract 6">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">20:10:10</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/cilicon1.png" class="bagsSize" alt="Abstract 6">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">Silicon</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/genalfa1.png" class="bagsSize" alt="Abstract 6">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">GenAlpha</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+
+                            <img src="assets/Img/Product/GlowShine.png" class="bagsSize" alt="Glowshine">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">Glow Shine</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header">
+                            <img src="assets/Img/Product/potashDerivedfrommolases.png" class="bagsSize" alt="PDM">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">PDM</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sc-card">
+                        <div class="sc-card-header ">
+                            <img src="assets/Img/Product/RealBag.png" class="bagsSize" alt="RealBag">
+                        </div>
+                        <div class="sc-card-body">
+                            <div class="sc-card-content">
+                                <div class="sc-card-title">Real Bag</div>
+                                <div class="sc-card-text">
+                                    <p>Natural fertilizers containing living microorganisms that promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section id="process" class="process-section section-padding ">
+            <div class="swiper" #MFGswiper slides-per-view="1" pagination='{"clickable": true}' loop="true"
+                class=" border border-1 rounded  position-relative overflow-hidden omp">
+                <div class="swiper-slide">
+                    <div class="container m-3 mb-5 ">
+                        <div id="rain"></div>
+                        <h2 class="section-title ">Our Manufacturing Process</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mb-5 mb-lg-0 text-light">
+                                <div class="process-step fade-in">
+                                    <div class="step-number">1</div>
+                                    <div>
+                                        <h4>Raw Material Sourcing</h4>
+                                        <p>We import high-quality Magnesium Oxide with 85% purity and use high-grade
+                                            sulphuric
+                                            acid for
+                                            our manufacturing processes.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step fade-in">
+                                    <div class="step-number">2</div>
+                                    <div>
+                                        <h4>Chemical Reaction</h4>
+                                        <p>Through precise chemical reactions, we produce best quality Magnesium
+                                            Sulphate that
+                                            meets all
+                                            parameters of FCO standards.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step fade-in">
+                                    <div class="step-number">3</div>
+                                    <div>
+                                        <h4>Quality Control</h4>
+                                        <p>Our in-house laboratory with experienced staff ensures all products meet the
+                                            highest
+                                            quality
+                                            standards before reaching customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 fade-in">
+                                <div class="card border-0 shadow-lg h-100">
+                                    <div class="card-body p-4">
+                                        <h3 class="mb-4">Our Facilities</h3>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>Reactors for chemical processing</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>Boilers for temperature control</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>Mother liquor tanks</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>Crystallizers with centrifuges</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>Modern production and packing units</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>Quality control laboratory</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container m-3 mb-5 ">
+                        <div id="rain"></div>
+                        <h2 class="section-title ">Flow Chart</h2>
+                        <div class="row">
+                            <div class="col-lg-6 mb-5 mb-lg-0 text-light">
+                                <div class="process-step fade-in">
+                                    <div class="step-number">1</div>
+                                    <div>
+                                        <h4>Raw Material Sourcing</h4>
+                                        <p>We are purchased high quality UREA, DAP, MAP, SSP, MOP, SOP, FILLER, ASH,
+                                            GYPSUM AND
+                                            SILICON for our manufacturing process.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step fade-in">
+                                    <div class="step-number">2</div>
+                                    <div>
+                                        <h4>Chemical Reaction</h4>
+                                        <p>Though precise chemical rection .we produces best quality NPK Mix
+                                            Fertilizers, Soil
+                                            Conditioner and
+                                            Organic Manure that meets all parameters of FCO Standard.</p>
+                                    </div>
+                                </div>
+                                <div class="process-step fade-in">
+                                    <div class="step-number">3</div>
+                                    <div>
+                                        <h4>Quality Control</h4>
+                                        <p>Our in-house laboratory with experienced staff ensures all products meet the
+                                            highest
+                                            quality
+                                            standards before reaching customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 fade-in">
+                                <div class="card border-0 shadow-lg h-100">
+                                    <div class="card-body p-4">
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>RAW MATERIAL</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>FEEDING CENTER</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>FERTILIZED MIXING BELT</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span> GRANULATION DRUM</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>COAL FURNACE</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span>DRIER DRUM</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span> GRANULAR SIZER NET</span>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <span> FINISHED PRODUCT</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <div class="container-fluid border rounded p-2 w-75 bgn">
+                <div class="row p-0">
+                    <div class="col-12 col-sm-4  d-flex justify-content-center align-items-center">
+                        <div class="d-flex justify-content-center align-items-center gap-5">
+                            <img src="assets/Img/mobileAppsScreen/Screenshot_20251222_134025.png" #box1 class="box1"
+                                style="width: 30%;height: auto;" alt="mobScreen1">
+
+                            <img src="assets/Img/mobileAppsScreen/img2.png" style="width: 30%;" #box2 class="box2"
+                                alt="mobScreen1">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 d-flex flex-column justify-content-start align-items-center">
+                        <div class="p-3 Appdetail bg-light shadow-sm" style="border-radius: 33px;">
+                            <p> This app lets farmers scan QR-codes on agricultural products and earn
+                                loyalty/reward points based on the ongoing reward program. </p>
+                            <br>
+                            <strong> Key Features.</strong>
+                            <ol>
+                                <li>📲 Scan product QR codes to earn points.</li>
+                                <li>💰 Earn reward/loyalty points for scanning — depending on the scheme running.</li>
+                                <li>🛡️ Verify product authenticity — helps ensure the product is genuine before use.
+                                </li>
+                                <li>📊 View scan history & point balance.</li>
+                            </ol>
+                            <button
+                                class="btn btn-light border  rounded-lg   m-auto my-3 d-flex justify-content-between align-items-center border p-1 my-btn"
+                                (click)="showOnPlay()">
+                                <img src="assets/Img/mobileAppsScreen/icon.png"
+                                    style="width: 3rem;border-radius: 16px;box-shadow:2px 2px 2px #808080;" class="me-3"
+                                    alt="">
+                                BHUMATA-MITRA
+                                <i class="fa-solid fa-arrow-down ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section ">
+            <div class="container position-relative">
+                <div class="text-center mb-4">
+                    <h1>Our Growth Journey</h1>
+                    <p> Discover our impact and reach through these key metrics that showcase our commitment to
+                        excellence and
+                        customer satisfaction.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="row ">
+                            <div class="col-md-3 p-2">
+                                <div class="stats-card">
+                                    <div class="stats-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                            fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                            <path
+                                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <div class="stats-number">2005</div>
+                                    <div class="stats-label">SINCE</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 p-2">
+                                <div class="stats-card">
+                                    <div class="stats-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                            fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="stats-number">50 Thousand+</div>
+                                    <div class="stats-label">Metric Tons Fertilizer Delivered per annum</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 p-2">
+                                <div class="stats-card">
+                                    <div class="stats-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                            fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                                        </svg>
+                                    </div>
+                                    <div class="stats-number">100+</div>
+                                    <div class="stats-label">Highly Qualified & Experienced Team</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 p-2">
+                                <div class="stats-card">
+                                    <div class="stats-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                            fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                                        </svg>
+                                    </div>
+                                    <div class="stats-number">10 Lac+</div>
+                                    <div class="stats-label">Happy Customers</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <app-footer />
+    </div>
+</div>

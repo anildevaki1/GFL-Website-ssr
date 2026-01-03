@@ -1,0 +1,332 @@
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <section id="products" class="section-padding mt-5">
+            <div class="container">
+                <h2 class="section-title mt-5">Our Products</h2>
+
+                <fieldset class="npk-fieldset mb-3 parentCard">
+                    <legend> NPK Mix Fertilizers </legend>
+
+                    <div class="row" id="products">
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/neembased.png" class="card-img-top" alt="NPK Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">10:20:10</h4>
+                                    <p class="card-text">Customized nutrient mixtures for different crops and soil types
+                                        to
+                                        maximize
+                                        yield potential.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/neembased2020.png" class="card-img-top"
+                                    alt="Soil Conditioners">
+                                <div class="card-body">
+                                    <h4 class="card-title">10:20:20</h4>
+                                    <p class="card-text">Improve soil structure, water retention, and nutrient
+                                        availability for
+                                        healthier plant growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/areaspecial0621.png" class="card-img-top"
+                                    alt="Organic Manure">
+                                <div class="card-body">
+                                    <h4 class="card-title">14:06:21</h4>
+                                    <p class="card-text">Natural fertilizers that enrich soil with organic matter and
+                                        essential
+                                        nutrients Organic Manure.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/neembased150505.png" class="card-img-top"
+                                    alt="Micronutrients">
+                                <div class="card-body">
+                                    <h4 class="card-title">15:05:05</h4>
+                                    <p class="card-text">Essential trace elements including Magnesium Sulphate, Ferrous
+                                        Sulphate,
+                                        and Zinc Sulphate.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/neembased171717.png" class="card-img-top" alt="PROM & PDM">
+                                <div class="card-body">
+                                    <h4 class="card-title">17:17:17</h4>
+                                    <p class="card-text">Phosphorus Rich Organic Manure and Potash Derived from Molasses
+                                        for
+                                        specialized nutrient needs.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/neembased181810.png" class="card-img-top"
+                                    alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">18:18:10</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/neembased201010.png" class="card-img-top"
+                                    alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">20:10:10</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/genalfa1.png" class="card-img-top" alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">GenAlpha</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="fieldset-footer text-center   p-2" style="cursor: pointer;"
+                        (click)="inDetail('npkMixture')">
+                        Detail
+                    </footer>
+                </fieldset>
+
+                <fieldset class="pdm_prom mb-3 parentCard">
+                    <legend>Soil Conditioners</legend>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/cilicon1.png" class="card-img-top" alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">Silicon</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                                <footer class="fieldset-footer text-center  p-2 m-3 " style="cursor: pointer;"
+                                    (click)="inDetail('soilcndtr1')">
+                                    Detail
+                                </footer>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/RealBag.png" class="card-img-top" alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">Real Bag</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                                <footer class="fieldset-footer text-center  p-2 m-3 " style="cursor: pointer;"
+                                    (click)="inDetail('soilcndtr2')">
+                                    Detail
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset class="organic_menuer mb-3 parentCard">
+                    <legend>
+                        Organic Manure
+                    </legend>
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/potashDerivedfrommolases.png" class="card-img-top"
+                                    alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">PDM</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3 mb-4" (click)="getInfo($event)">
+                            <div class="card product-card fade-in h-100">
+                                <img src="assets/Img/Product/GlowShine.png" class="card-img-top" alt="Bio Fertilizers">
+                                <div class="card-body">
+                                    <h4 class="card-title">Glow Shine</h4>
+                                    <p class="card-text">Natural fertilizers containing living microorganisms that
+                                        promote plant
+                                        growth.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="fieldset-footer text-center  p-2 m-3 " style="cursor: pointer;"
+                        (click)="inDetail('orgmnr')">
+                        Detail
+                    </footer>
+                </fieldset>
+
+                <fieldset class="micronutrients mb-3 parentCard">
+                    <legend>
+                        Micronutrients
+                    </legend>
+
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 ">
+                            <div class="card product-card fade-in h-100 p-2">
+                                <img src="assets/Img/Product/magnashiemSulfet.png" class="card-img-top">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="pbsf mb-3 parentCard">
+                    <legend>
+                        Water Soluble
+                    </legend>
+
+                    <div class="row mb-2">
+                        <div class="col-md-2 col-lg-2">
+                            <div class="card product-card fade-in h-100 p-2">
+                                <img src="assets/Img/Product/_bpc.png" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 ">
+                            <div class="card product-card fade-in h-100 p-2">
+                                <img src="assets/Img/Product/_bpc2.png" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body mb-2">
+                        <p class="card-text">These fertilizers are polyhalite-based, multi-nutrient compounded
+                            fertilizers that
+                            are nearly 100% water soluble.</p>
+                    </div>
+                    <footer class="fieldset-footer text-center  p-2" style="cursor: pointer;"
+                        (click)="inDetail('bpcfrtilizer')">
+                        Detail
+                    </footer>
+                </fieldset>
+
+                <fieldset class="liquid_fertilizers parentCard">
+                    <legend>
+                        Liquid Fertilizers
+                    </legend>
+
+                    <div class=" h-100 p-2">
+                        <div class="row">
+                            <div class="col-md-2 col-lg-2 ">
+                                <div class="card product-card fade-in h-100 p-2">
+                                    <img src="assets/Img/Product/liquidFertilizers/lqft1.png" class="card-img-top"
+                                        alt="liquid Fertilizers">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 ">
+                                <div class="card product-card fade-in h-100 p-2">
+                                    <img src="assets/Img/Product/liquidFertilizers/lqft2.png" class="card-img-top"
+                                        alt="liquid Fertilizers">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 ">
+                                <div class="card product-card fade-in h-100 p-2">
+                                    <img src="assets/Img/Product/liquidFertilizers/lqft3.png" class="card-img-top"
+                                        alt="liquid Fertilizers">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 ">
+                                <div class="card product-card fade-in h-100 p-2">
+                                    <img src="assets/Img/Product/liquidFertilizers/lqft4.png" class="card-img-top"
+                                        alt="liquid Fertilizers">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 ">
+                                <div class="card product-card fade-in h-100 p-2">
+                                    <img src="assets/Img/Product/liquidFertilizers/lqft5.png" class="card-img-top"
+                                        alt="liquid Fertilizers">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-lg-2 ">
+                                <div class="card product-card fade-in h-100 p-2">
+                                    <img src="assets/Img/Product/liquidFertilizers/lqft6.png" class="card-img-top"
+                                        alt="liquid Fertilizers">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body py-2">
+                            <p class="card-text">Liquas is a range of liquid fertilizers. This balanced formula ensures
+                                easy
+                                availability and absorption of macronutrients.</p>
+                        </div>
+
+                        <footer class="fieldset-footer text-center   p-2" style="cursor: pointer;"
+                            (click)="inDetail('lqdFT')">
+                            Detail
+                        </footer>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <app-footer />
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <img [src]="img" alt="" style="width: 85%;" srcset="">
+                    </div>
+                    <div class="col-6">
+                        <h3>{{label}}</h3>
+                        {{info}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<nav class="navbar   navbar-expand-lg    fixed-top my-nav "
+  [ngClass]=" { 'navbar-dark': isMobile || router.url === '/Homepage', 
+  ' border-bottom': !isMobile && router.url !== '/Homepage' }">
+ 
+  <a class="navbar-brand ms-3 d-flex align-items-center" routerLink="/">
+    <img style="height: 35px;" [src]="logo" alt="">
+    <div class="ms-2 d-flex flex-column justify-content-center">
+      <p class="mb-0 d-block" style="font-size: 1rem;font-weight: bold;">{{"Ghatprabha" | uppercase}}</p>
+      <small style="font-size: small;font-style: italic;">Fertilizers Pvt. Ltd.</small>
+    </div>
+  </a>
+
+  <button class="btn btn-sm navbar-toggler p-1 me-3 border" type="button" (click)="onToggle()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse me-5" #navbarNav>
+    <ul class="navbar-nav ms-auto ms-5smallScreen">
+      <li class="nav-item">
+        <a [routerLink]="['/Homepage']" routerLinkActive="active" class="nav-link" (click)="hidemenu()">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a [routerLink]="['/About']" routerLinkActive="active" class="nav-link" (click)="hidemenu()">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a [routerLink]="['/Product']" routerLinkActive="active" class="nav-link" (click)="hidemenu()">Product</a>
+      </li>
+      
+        <li class="nav-item">
+        <a [routerLink]="['/Download-App']" routerLinkActive="active" class="nav-link" (click)="hidemenu()">Download App</a>
+      </li>
+
+      <li class="nav-item">
+        <a [routerLink]="['/Contact']" routerLinkActive="active" class="nav-link" (click)="hidemenu()">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

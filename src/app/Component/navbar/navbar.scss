@@ -1,0 +1,25 @@
+.my-nav {
+  
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+.my-nav.scrolled {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5) !important; /* glass effect */
+  
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid orangered;
+}
+
+@media (max-width: 768px) {
+  .my-nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5) !important; /* glass effect */
+  }
+
+  .ms-5smallScreen{
+    padding-left: 20px !important;
+  }
+}

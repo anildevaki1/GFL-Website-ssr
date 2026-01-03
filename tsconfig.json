@@ -3,7 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "strict": true,
+    "baseUrl": "src",
+       "paths": {
+      "@assets/*": ["assets/*"],
+    },
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,

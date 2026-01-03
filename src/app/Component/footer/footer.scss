@@ -1,0 +1,17 @@
+.list > li a {
+color: white;
+}
+.list > li:hover {
+  color: orangered;
+}
+
+.list > li:hover a {
+  color: orangered;
+}
+ 
+@media (max-width: 768px) {
+  .isSmall{
+    text-align: center;
+     
+  }
+}

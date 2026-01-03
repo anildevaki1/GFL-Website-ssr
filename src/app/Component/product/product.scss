@@ -1,0 +1,114 @@
+/* Section spacing */
+.section-padding {
+  padding: 50px 0 70px;
+}
+/* Fade-in animation when scrolling */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Product card design */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card .card-img-top {
+  height: 300px; /* 🔒 fixed image area */
+  object-fit: contain; /* keeps image centered */
+}
+
+/* Hover animation */
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge styling */
+.product-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #28a745;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image smooth scale on hover */
+.product-card img {
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.07);
+}
+
+/* Card body text */
+.product-card .card-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-card .card-text {
+  color: #555;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #28a745);
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+}
+
+.parentCard {
+  border: 1px solid #e7dbdb;
+  border-radius: 12px;
+}
+
+:is(.npk-fieldset, .pdm_prom, .organic_menuer, .liquid_fertilizers, .micronutrients, .pbsf) {
+  padding: 15px;
+}
+
+:is(.npk-fieldset, .pdm_prom, .organic_menuer, .liquid_fertilizers, .micronutrients, .pbsf) legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+.fieldset-footer {
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: #f1ebeb;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fieldset-footer:hover {
+  background-color: #e4dede;
+  box-shadow: 2px 4px 6px #e6e3e3, inset -2px 4px 6px #e6e3e3;
+}
